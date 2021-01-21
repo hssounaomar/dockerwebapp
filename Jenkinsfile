@@ -12,6 +12,7 @@ node {
             bat 'sleep 30s'
             bat 'curl 127.0.0.1:8081'
             bat 'docker ps'
+            bat "docker stop run-$BUILD_ID"
           }
     }
 
